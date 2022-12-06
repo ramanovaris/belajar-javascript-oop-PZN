@@ -8,14 +8,25 @@
   </head>
   <body>
     <script>
-      // class / constructure function
+      // class / constructor function
       // nama function menggunakan PascalCase
-      function Person() {}
+      function Person() {
+        this.firstName = "";
+        this.lastName = "";
+      }
 
       // object
       // nama variable menggunakan camelCase
-      const rama = new Person();
-      const jumai = new Person();
+      const rama = new Person(); // contoh 1
+      rama.firstName = "Rama";
+      rama.lastName = "Novaris";
+
+      const jumai = new Person(); // contoh 2
+      jumai.firstName = "Jumai";
+      // jumai.lastName = "Alfaris";
+
+      console.log(rama);
+      console.log(jumai);
     </script>
   </body>
 </html>
