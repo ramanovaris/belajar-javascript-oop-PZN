@@ -13,6 +13,9 @@
       function Person() {
         this.firstName = "";
         this.lastName = "";
+        this.sayHello = function (name) {
+          console.info(`Hello ${name}, my name is ${this.firstName}`);
+        };
       }
 
       // object
@@ -20,9 +23,11 @@
       const rama = new Person(); // contoh 1
       rama.firstName = "Rama";
       rama.lastName = "Novaris";
+      rama.sayHello("Nurul");
 
       const jumai = new Person(); // contoh 2
       jumai.firstName = "Jumai";
+      jumai.sayHello("Faris");
       // jumai.lastName = "Alfaris";
 
       console.log(rama);
